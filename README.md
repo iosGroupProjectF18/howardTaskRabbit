@@ -2,6 +2,9 @@
 
 **Howard Task Rabbit** is a an app based at Howard University where students can request or complete tasks such as doing someone's laundry for pay.
 
+## Wireframe
+
+<img src = "https://i.imgur.com/4DgDq0m.png">
 
 ## User Stories
 
