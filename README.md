@@ -10,7 +10,7 @@
 
 The following **required** functionality is completed:
 
-- [X] User can sign up to create a new account using Parse authentication
+- [ ] User can sign up to create a new account using Parse authentication
 - [ ] User can complete their profile stating their dorm
 - [ ] User can request that a task be completed by X date and X time
 - [ ] User can accept the repsonsibilit to complete a task by X date and X time
