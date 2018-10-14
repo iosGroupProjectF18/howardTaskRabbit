@@ -28,9 +28,9 @@ Currently there is no such application which allows Howard students to have othe
 Our users include Howard students who live on campus and they will use the app for getting their tasks done.
 
 ## Technical Details
-• The application will implement table view to show lists of task that is available and some willing person will choose to do that task.
-• The cell in the table view will have button to chat to the poster of that task. 
-• For now we are planning to use camera to post image that corresponds to the task (for eg: bag of laundry) but this is optional too.
+• The application will implement table view to show lists of task that is available and some willing person will choose to do that task.<br />
+• The cell in the table view will have button to chat to the poster of that task. <br />
+• For now we are planning to use camera to post image that corresponds to the task (for eg: bag of laundry) but this is optional too.<br />
 • We will be using Parse for backend as well
 
 
