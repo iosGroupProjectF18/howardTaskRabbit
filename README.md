@@ -13,13 +13,26 @@ The following **required** functionality is completed:
 - [ ] User can sign up to create a new account using Parse authentication
 - [ ] User can complete their profile stating their dorm
 - [ ] User can request that a task be completed by X date and X time
-- [ ] User can accept the repsonsibilit to complete a task by X date and X time
+- [ ] User can accept the repsonsibility to complete a task by X date and X time
 - [ ] User can message the person who requested/accepted the task for more information and status updates 
 - [ ] User can mark task completed
 
 The following **stretch** features are implemented:
 
 - [ ] User can rate each other after a task is completed 
+
+## Problem Statement
+Currently there is no such application which allows Howard students to have others do some of their work (for instance: laundry, getting their grocery etc). So we realized that we could make an ios app where students can collaborate with each other and have their tasks done in exchange of money. 
+
+## Users
+Our users include Howard students who live on campus and they will use the app for getting their tasks done.
+
+## Technical Details
+• The application will implement table view to show lists of task that is available and some willing person will choose to do that task.
+• The cell in the table view will have button to chat to the poster of that task. 
+• For now we are planning to use camera to post image that corresponds to the task (for eg: bag of laundry) but this is optional too.
+• We will be using Parse for backend as well
+
 
 ## Notes
 
