@@ -14,8 +14,9 @@ The following **required** functionality is completed:
 - [ ] User can complete their profile stating their dorm
 - [ ] User can request that a task be completed by X date and X time
 - [ ] User can accept the repsonsibility to complete a task by X date and X time
+- [ ] User can view a list of requested tasks
 - [ ] User can message the person who requested/accepted the task for more information and status updates 
-- [ ] User can see a list of tasks and mark a task as completed
+- [ ] User can mark a task as completed
 
 The following **stretch** features are implemented:
 
