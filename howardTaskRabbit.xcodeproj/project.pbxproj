@@ -14,6 +14,8 @@
 		5027DA83216195AA00B3C65F /* howardTaskRabbitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DA82216195AA00B3C65F /* howardTaskRabbitTests.swift */; };
 		5027DA8E216195AA00B3C65F /* howardTaskRabbitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DA8D216195AA00B3C65F /* howardTaskRabbitUITests.swift */; };
 		50AF0FA9217B7B910072E46F /* RequestTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF0FA8217B7B910072E46F /* RequestTaskViewController.swift */; };
+		50AF0FAC217B80EB0072E46F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF0FAB217B80EB0072E46F /* Task.swift */; };
+		50AF0FAE217B86B00072E46F /* viewRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF0FAD217B86B00072E46F /* viewRequestController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5027DA8D216195AA00B3C65F /* howardTaskRabbitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howardTaskRabbitUITests.swift; sourceTree = "<group>"; };
 		5027DA8F216195AA00B3C65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50AF0FA8217B7B910072E46F /* RequestTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskViewController.swift; sourceTree = "<group>"; };
+		50AF0FAB217B80EB0072E46F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		50AF0FAD217B86B00072E46F /* viewRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewRequestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		5027DA6C216195A800B3C65F /* howardTaskRabbit */ = {
 			isa = PBXGroup;
 			children = (
+				50AF0FAA217B80D40072E46F /* Modules */,
 				5027DA6D216195A800B3C65F /* AppDelegate.swift */,
 				50AF0FA7217B7B6C0072E46F /* View Controllers */,
 				5027DA71216195A800B3C65F /* Main.storyboard */,
@@ -129,8 +134,17 @@
 			isa = PBXGroup;
 			children = (
 				50AF0FA8217B7B910072E46F /* RequestTaskViewController.swift */,
+				50AF0FAD217B86B00072E46F /* viewRequestController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		50AF0FAA217B80D40072E46F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				50AF0FAB217B80EB0072E46F /* Task.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5027DA6E216195A800B3C65F /* AppDelegate.swift in Sources */,
+				50AF0FAC217B80EB0072E46F /* Task.swift in Sources */,
+				50AF0FAE217B86B00072E46F /* viewRequestController.swift in Sources */,
 				50AF0FA9217B7B910072E46F /* RequestTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysg-YF-cRn">
-                                <rect key="frame" x="172" y="196" width="46" height="30"/>
+                                <rect key="frame" x="149" y="196" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Request Task"/>
                                 <connections>
                                     <segue destination="0da-Zt-h1Y" kind="show" id="B26-8O-PHe"/>
                                 </connections>
@@ -76,6 +76,10 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="submit:" destination="0da-Zt-h1Y" eventType="touchUpInside" id="GXZ-LJ-Jc6"/>
+                                    <segue destination="FCy-f1-hBt" kind="show" identifier="succesfulSubmit" id="CPM-YH-6Gt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22897096459999999" green="0.80351760790000004" blue="0.3033775078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -99,10 +103,42 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hC4-ZX-NcG"/>
                     </view>
+                    <connections>
+                        <outlet property="DoneBy" destination="aMp-NN-oot" id="ePe-YI-OW5"/>
+                        <outlet property="taskInput" destination="fEW-eC-hrp" id="UcN-gn-h1q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wWu-SJ-Rvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1692" y="27.436281859070466"/>
+        </scene>
+        <!--View Request Controller-->
+        <scene sceneID="Fol-ex-JNl">
+            <objects>
+                <viewController id="FCy-f1-hBt" customClass="viewRequestController" customModule="howardTaskRabbit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ciu-CE-ZeP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Tasks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCU-by-LSj">
+                                <rect key="frame" x="94" y="30" width="186" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22897096459999999" green="0.80351760790000004" blue="0.3033775078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TkI-w9-rbL" firstAttribute="trailing" secondItem="BCU-by-LSj" secondAttribute="trailing" constant="95" id="GCG-QD-ar2"/>
+                            <constraint firstItem="BCU-by-LSj" firstAttribute="leading" secondItem="TkI-w9-rbL" secondAttribute="leading" constant="94" id="kgz-jt-Iln"/>
+                            <constraint firstItem="BCU-by-LSj" firstAttribute="top" secondItem="TkI-w9-rbL" secondAttribute="top" constant="10" id="qOe-op-LEO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TkI-w9-rbL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXp-7i-KMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2495" y="4"/>
         </scene>
     </scenes>
 </document>
