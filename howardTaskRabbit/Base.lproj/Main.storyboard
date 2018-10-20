@@ -9,6 +9,86 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="bo1-WO-whn">
+            <objects>
+                <viewController id="Lke-BR-7iC" customClass="ProfileViewController" customModule="howardTaskRabbit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Rf-1l-JQf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QG-lf-4Zs">
+                                <rect key="frame" x="103" y="88" width="169" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Aco-TD-UAM"/>
+                                    <constraint firstAttribute="width" constant="169" id="dcM-Fh-rqE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvE-5I-044">
+                                <rect key="frame" x="50" y="246" width="74" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dorm:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kql-fK-N3Z">
+                                <rect key="frame" x="50" y="356" width="69" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="97S-3o-cCW">
+                                <rect key="frame" x="145" y="246" width="183" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F1D-K4-lhr">
+                                <rect key="frame" x="145" y="356" width="183" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCI-MH-bT8">
+                                <rect key="frame" x="159" y="467" width="56" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77867296009999998" green="1" blue="0.82285031109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WCI-MH-bT8" firstAttribute="leading" secondItem="qub-B8-sEp" secondAttribute="leading" constant="159" id="17P-c8-gGz"/>
+                            <constraint firstItem="F1D-K4-lhr" firstAttribute="top" secondItem="97S-3o-cCW" secondAttribute="bottom" constant="80" id="4Bc-4h-LXR"/>
+                            <constraint firstItem="9QG-lf-4Zs" firstAttribute="top" secondItem="qub-B8-sEp" secondAttribute="top" constant="68" id="4M3-QR-2wQ"/>
+                            <constraint firstItem="qub-B8-sEp" firstAttribute="trailing" secondItem="WCI-MH-bT8" secondAttribute="trailing" constant="160" id="8R1-Ap-j4y"/>
+                            <constraint firstItem="qub-B8-sEp" firstAttribute="trailing" secondItem="97S-3o-cCW" secondAttribute="trailing" constant="47" id="Dhm-DZ-aBj"/>
+                            <constraint firstItem="F1D-K4-lhr" firstAttribute="leading" secondItem="97S-3o-cCW" secondAttribute="leading" id="GNT-fC-ilQ"/>
+                            <constraint firstItem="F1D-K4-lhr" firstAttribute="leading" secondItem="kql-fK-N3Z" secondAttribute="trailing" constant="26" id="Ify-bF-57U"/>
+                            <constraint firstItem="qub-B8-sEp" firstAttribute="trailing" secondItem="9QG-lf-4Zs" secondAttribute="trailing" constant="103" id="NU4-ug-68P"/>
+                            <constraint firstItem="97S-3o-cCW" firstAttribute="top" secondItem="9QG-lf-4Zs" secondAttribute="bottom" constant="122" id="QAI-55-Eht"/>
+                            <constraint firstItem="9QG-lf-4Zs" firstAttribute="leading" secondItem="qub-B8-sEp" secondAttribute="leading" constant="103" id="Wgj-v0-OAE"/>
+                            <constraint firstItem="KvE-5I-044" firstAttribute="top" secondItem="9QG-lf-4Zs" secondAttribute="bottom" constant="122" id="fKC-Pn-Nfq"/>
+                            <constraint firstItem="KvE-5I-044" firstAttribute="leading" secondItem="qub-B8-sEp" secondAttribute="leading" constant="50" id="fyy-qQ-ieR"/>
+                            <constraint firstItem="qub-B8-sEp" firstAttribute="trailing" secondItem="F1D-K4-lhr" secondAttribute="trailing" constant="47" id="iJK-D4-hnB"/>
+                            <constraint firstItem="kql-fK-N3Z" firstAttribute="top" secondItem="KvE-5I-044" secondAttribute="bottom" constant="80" id="l0E-kI-SMt"/>
+                            <constraint firstItem="97S-3o-cCW" firstAttribute="leading" secondItem="KvE-5I-044" secondAttribute="trailing" constant="21" id="m0q-nc-e9Y"/>
+                            <constraint firstItem="WCI-MH-bT8" firstAttribute="top" secondItem="F1D-K4-lhr" secondAttribute="bottom" constant="81" id="n49-TJ-4aF"/>
+                            <constraint firstItem="kql-fK-N3Z" firstAttribute="leading" secondItem="qub-B8-sEp" secondAttribute="leading" constant="50" id="sh1-Ka-yEH"/>
+                            <constraint firstItem="kql-fK-N3Z" firstAttribute="leading" secondItem="KvE-5I-044" secondAttribute="leading" id="zJg-hj-C4f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qub-B8-sEp"/>
+                    </view>
+                    <connections>
+                        <outlet property="dormField" destination="F1D-K4-lhr" id="hDR-Em-aqd"/>
+                        <outlet property="nameField" destination="97S-3o-cCW" id="IJ1-qb-nxc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hb0-mz-WAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178.40000000000001" y="28.335832083958024"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -32,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="27"/>
+            <point key="canvasLocation" x="1001" y="27"/>
         </scene>
         <!--Request Task View Controller-->
         <scene sceneID="HFL-HI-J1A">
@@ -215,11 +295,12 @@
                     <connections>
                         <outlet property="passwordField" destination="I9F-RX-MCV" id="0P8-dl-kYR"/>
                         <outlet property="usernameField" destination="8L0-ZS-5Dm" id="h5s-yn-knV"/>
+                        <segue destination="Lke-BR-7iC" kind="presentation" identifier="loginSegue" id="9l3-ky-FVI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K3T-Qg-vVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+            <point key="canvasLocation" x="-652" y="27"/>
         </scene>
     </scenes>
 </document>

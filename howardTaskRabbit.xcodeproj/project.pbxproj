@@ -20,6 +20,8 @@
 		50AF0FAE217B86B00072E46F /* viewRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF0FAD217B86B00072E46F /* viewRequestController.swift */; };
 		57467679F2EF0881F13F7577 /* Pods_howardTaskRabbitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79209CABF8118C4110CF62 /* Pods_howardTaskRabbitTests.framework */; };
 		F644373E217BCC0000E17936 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F644373D217BCC0000E17936 /* LoginViewController.swift */; };
+		F6443740217BDA9F00E17936 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F644373F217BDA9F00E17936 /* ProfileViewController.swift */; };
+		F6443744217BDC4F00E17936 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6443743217BDC4F00E17936 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		C9139592B109508354CDA93C /* Pods-howardTaskRabbitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howardTaskRabbitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-howardTaskRabbitTests/Pods-howardTaskRabbitTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA79209CABF8118C4110CF62 /* Pods_howardTaskRabbitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_howardTaskRabbitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F644373D217BCC0000E17936 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F644373F217BDA9F00E17936 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F6443743217BDC4F00E17936 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 				50AF0FA8217B7B910072E46F /* RequestTaskViewController.swift */,
 				50AF0FAD217B86B00072E46F /* viewRequestController.swift */,
 				F644373D217BCC0000E17936 /* LoginViewController.swift */,
+				F644373F217BDA9F00E17936 /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				50AF0FAB217B80EB0072E46F /* Task.swift */,
+				F6443743217BDC4F00E17936 /* User.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -418,11 +424,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6443740217BDA9F00E17936 /* ProfileViewController.swift in Sources */,
 				5027DA6E216195A800B3C65F /* AppDelegate.swift in Sources */,
 				50AF0FAC217B80EB0072E46F /* Task.swift in Sources */,
 				50AF0FAE217B86B00072E46F /* viewRequestController.swift in Sources */,
 				F644373E217BCC0000E17936 /* LoginViewController.swift in Sources */,
 				50AF0FA9217B7B910072E46F /* RequestTaskViewController.swift in Sources */,
+				F6443744217BDC4F00E17936 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

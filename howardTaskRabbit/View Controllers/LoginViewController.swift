@@ -25,6 +25,7 @@ class LoginViewController: UIViewController {
         newUser.password = passwordField.text
         newUser.signUpInBackground { (success: Bool, error: Error?) in
             if success{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
                 print ("Created a new User!")
             }
             else{
@@ -36,8 +37,10 @@ class LoginViewController: UIViewController {
     @IBAction func onSignIn(_ sender: Any) {
         PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text! ) {(user: PFUser?, error: Error?) in
             if user != nil{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
                 print ("user is logged in")
             }
+            
         }
     }
     /*
