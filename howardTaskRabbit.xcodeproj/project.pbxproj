@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35D3B18EEFD5E365013C4BF7 /* Pods_howardTaskRabbit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724181FCFF91EC4009102003 /* Pods_howardTaskRabbit.framework */; };
+		4635A7BFA1C6A4D1AD85CF14 /* Pods_howardTaskRabbitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788B1146F369708EEDD26E4A /* Pods_howardTaskRabbitUITests.framework */; };
 		5027DA6E216195A800B3C65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DA6D216195A800B3C65F /* AppDelegate.swift */; };
-		5027DA70216195A800B3C65F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DA6F216195A800B3C65F /* ViewController.swift */; };
 		5027DA73216195A800B3C65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5027DA71216195A800B3C65F /* Main.storyboard */; };
 		5027DA75216195AA00B3C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5027DA74216195AA00B3C65F /* Assets.xcassets */; };
 		5027DA78216195AA00B3C65F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5027DA76216195AA00B3C65F /* LaunchScreen.storyboard */; };
 		5027DA83216195AA00B3C65F /* howardTaskRabbitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DA82216195AA00B3C65F /* howardTaskRabbitTests.swift */; };
 		5027DA8E216195AA00B3C65F /* howardTaskRabbitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DA8D216195AA00B3C65F /* howardTaskRabbitUITests.swift */; };
+		50AF0FA9217B7B910072E46F /* RequestTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF0FA8217B7B910072E46F /* RequestTaskViewController.swift */; };
+		50AF0FAC217B80EB0072E46F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF0FAB217B80EB0072E46F /* Task.swift */; };
+		50AF0FAE217B86B00072E46F /* viewRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AF0FAD217B86B00072E46F /* viewRequestController.swift */; };
+		57467679F2EF0881F13F7577 /* Pods_howardTaskRabbitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA79209CABF8118C4110CF62 /* Pods_howardTaskRabbitTests.framework */; };
+		F644373E217BCC0000E17936 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F644373D217BCC0000E17936 /* LoginViewController.swift */; };
+		F6443740217BDA9F00E17936 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F644373F217BDA9F00E17936 /* ProfileViewController.swift */; };
+		F6443744217BDC4F00E17936 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6443743217BDC4F00E17936 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,6 @@
 /* Begin PBXFileReference section */
 		5027DA6A216195A800B3C65F /* howardTaskRabbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howardTaskRabbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5027DA6D216195A800B3C65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5027DA6F216195A800B3C65F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5027DA72216195A800B3C65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5027DA74216195AA00B3C65F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5027DA77216195AA00B3C65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,21 @@
 		5027DA89216195AA00B3C65F /* howardTaskRabbitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = howardTaskRabbitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5027DA8D216195AA00B3C65F /* howardTaskRabbitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howardTaskRabbitUITests.swift; sourceTree = "<group>"; };
 		5027DA8F216195AA00B3C65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50AF0FA8217B7B910072E46F /* RequestTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskViewController.swift; sourceTree = "<group>"; };
+		50AF0FAB217B80EB0072E46F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		50AF0FAD217B86B00072E46F /* viewRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewRequestController.swift; sourceTree = "<group>"; };
+		6412D673785DBB5CF22B3DE0 /* Pods-howardTaskRabbit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howardTaskRabbit.release.xcconfig"; path = "Pods/Target Support Files/Pods-howardTaskRabbit/Pods-howardTaskRabbit.release.xcconfig"; sourceTree = "<group>"; };
+		724181FCFF91EC4009102003 /* Pods_howardTaskRabbit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_howardTaskRabbit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		788B1146F369708EEDD26E4A /* Pods_howardTaskRabbitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_howardTaskRabbitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A627DFA016A095629B898BDE /* Pods-howardTaskRabbitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howardTaskRabbitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-howardTaskRabbitUITests/Pods-howardTaskRabbitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7E94C941AFE70BC58ECAEDE /* Pods-howardTaskRabbit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howardTaskRabbit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-howardTaskRabbit/Pods-howardTaskRabbit.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0DBFC774BC865BB870DCCE /* Pods-howardTaskRabbitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howardTaskRabbitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-howardTaskRabbitUITests/Pods-howardTaskRabbitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C00451657D1550C5C0F5C2BD /* Pods-howardTaskRabbitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howardTaskRabbitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-howardTaskRabbitTests/Pods-howardTaskRabbitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9139592B109508354CDA93C /* Pods-howardTaskRabbitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-howardTaskRabbitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-howardTaskRabbitTests/Pods-howardTaskRabbitTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA79209CABF8118C4110CF62 /* Pods_howardTaskRabbitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_howardTaskRabbitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F644373D217BCC0000E17936 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F644373F217BDA9F00E17936 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F6443743217BDC4F00E17936 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D3B18EEFD5E365013C4BF7 /* Pods_howardTaskRabbit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57467679F2EF0881F13F7577 /* Pods_howardTaskRabbitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4635A7BFA1C6A4D1AD85CF14 /* Pods_howardTaskRabbitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A0C663B208ADF5E97A75E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7E94C941AFE70BC58ECAEDE /* Pods-howardTaskRabbit.debug.xcconfig */,
+				6412D673785DBB5CF22B3DE0 /* Pods-howardTaskRabbit.release.xcconfig */,
+				C00451657D1550C5C0F5C2BD /* Pods-howardTaskRabbitTests.debug.xcconfig */,
+				C9139592B109508354CDA93C /* Pods-howardTaskRabbitTests.release.xcconfig */,
+				A627DFA016A095629B898BDE /* Pods-howardTaskRabbitUITests.debug.xcconfig */,
+				AC0DBFC774BC865BB870DCCE /* Pods-howardTaskRabbitUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		24B4560AD7C8E3A27829CD4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724181FCFF91EC4009102003 /* Pods_howardTaskRabbit.framework */,
+				CA79209CABF8118C4110CF62 /* Pods_howardTaskRabbitTests.framework */,
+				788B1146F369708EEDD26E4A /* Pods_howardTaskRabbitUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5027DA61216195A800B3C65F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +129,8 @@
 				5027DA81216195AA00B3C65F /* howardTaskRabbitTests */,
 				5027DA8C216195AA00B3C65F /* howardTaskRabbitUITests */,
 				5027DA6B216195A800B3C65F /* Products */,
+				04A0C663B208ADF5E97A75E7 /* Pods */,
+				24B4560AD7C8E3A27829CD4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +147,9 @@
 		5027DA6C216195A800B3C65F /* howardTaskRabbit */ = {
 			isa = PBXGroup;
 			children = (
+				50AF0FAA217B80D40072E46F /* Modules */,
 				5027DA6D216195A800B3C65F /* AppDelegate.swift */,
-				5027DA6F216195A800B3C65F /* ViewController.swift */,
+				50AF0FA7217B7B6C0072E46F /* View Controllers */,
 				5027DA71216195A800B3C65F /* Main.storyboard */,
 				5027DA74216195AA00B3C65F /* Assets.xcassets */,
 				5027DA76216195AA00B3C65F /* LaunchScreen.storyboard */,
@@ -125,6 +176,26 @@
 			path = howardTaskRabbitUITests;
 			sourceTree = "<group>";
 		};
+		50AF0FA7217B7B6C0072E46F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50AF0FA8217B7B910072E46F /* RequestTaskViewController.swift */,
+				50AF0FAD217B86B00072E46F /* viewRequestController.swift */,
+				F644373D217BCC0000E17936 /* LoginViewController.swift */,
+				F644373F217BDA9F00E17936 /* ProfileViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		50AF0FAA217B80D40072E46F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				50AF0FAB217B80EB0072E46F /* Task.swift */,
+				F6443743217BDC4F00E17936 /* User.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5027DA92216195AA00B3C65F /* Build configuration list for PBXNativeTarget "howardTaskRabbit" */;
 			buildPhases = (
+				02ECB8026F18CBE249F82B4D /* [CP] Check Pods Manifest.lock */,
 				5027DA66216195A800B3C65F /* Sources */,
 				5027DA67216195A800B3C65F /* Frameworks */,
 				5027DA68216195A800B3C65F /* Resources */,
+				0E234F2C3D4D9EE486486BBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5027DA95216195AA00B3C65F /* Build configuration list for PBXNativeTarget "howardTaskRabbitTests" */;
 			buildPhases = (
+				E1F3F1A4A6E2395875AA67B0 /* [CP] Check Pods Manifest.lock */,
 				5027DA7A216195AA00B3C65F /* Sources */,
 				5027DA7B216195AA00B3C65F /* Frameworks */,
 				5027DA7C216195AA00B3C65F /* Resources */,
@@ -167,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5027DA98216195AA00B3C65F /* Build configuration list for PBXNativeTarget "howardTaskRabbitUITests" */;
 			buildPhases = (
+				D22B15DCBD9DF2814882A9AA /* [CP] Check Pods Manifest.lock */,
 				5027DA85216195AA00B3C65F /* Sources */,
 				5027DA86216195AA00B3C65F /* Frameworks */,
 				5027DA87216195AA00B3C65F /* Resources */,
@@ -251,13 +326,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02ECB8026F18CBE249F82B4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-howardTaskRabbit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E234F2C3D4D9EE486486BBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-howardTaskRabbit/Pods-howardTaskRabbit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-howardTaskRabbit/Pods-howardTaskRabbit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D22B15DCBD9DF2814882A9AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-howardTaskRabbitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F3F1A4A6E2395875AA67B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-howardTaskRabbitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5027DA66216195A800B3C65F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5027DA70216195A800B3C65F /* ViewController.swift in Sources */,
+				F6443740217BDA9F00E17936 /* ProfileViewController.swift in Sources */,
 				5027DA6E216195A800B3C65F /* AppDelegate.swift in Sources */,
+				50AF0FAC217B80EB0072E46F /* Task.swift in Sources */,
+				50AF0FAE217B86B00072E46F /* viewRequestController.swift in Sources */,
+				F644373E217BCC0000E17936 /* LoginViewController.swift in Sources */,
+				50AF0FA9217B7B910072E46F /* RequestTaskViewController.swift in Sources */,
+				F6443744217BDC4F00E17936 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +603,7 @@
 		};
 		5027DA93216195AA00B3C65F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E94C941AFE70BC58ECAEDE /* Pods-howardTaskRabbit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +622,7 @@
 		};
 		5027DA94216195AA00B3C65F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6412D673785DBB5CF22B3DE0 /* Pods-howardTaskRabbit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +641,7 @@
 		};
 		5027DA96216195AA00B3C65F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C00451657D1550C5C0F5C2BD /* Pods-howardTaskRabbitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +663,7 @@
 		};
 		5027DA97216195AA00B3C65F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9139592B109508354CDA93C /* Pods-howardTaskRabbitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +685,7 @@
 		};
 		5027DA99216195AA00B3C65F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A627DFA016A095629B898BDE /* Pods-howardTaskRabbitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +706,7 @@
 		};
 		5027DA9A216195AA00B3C65F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0DBFC774BC865BB870DCCE /* Pods-howardTaskRabbitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
