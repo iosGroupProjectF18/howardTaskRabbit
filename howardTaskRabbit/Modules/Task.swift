@@ -7,16 +7,44 @@
 //
 
 import Foundation
+import Parse
 
-class Task {
+class Task: PFObject, PFSubclassing {
     
-    var task: String?
-    var doneBy: Date
-  
-    init(task: String, date: Date) {
-        self.task = task
-        doneBy = date
-        }
+    static func parseClassName() -> String {
+        return "Task"
+    }
+    
+    
+//    var task: String?
+//    var doneBy: Date
+   
+//    init(task: String, date: Date) {
+//        self.task = task
+//        doneBy = date
+//        }
+    
+    @NSManaged var task : String?
+    @NSManaged var requester: PFUser
+    @NSManaged var doneBy: String
+    
+    class func postTask(taskName: String?, doneByDate: Date, withCompletion completion: PFBooleanResultBlock?) {
+        // use subclass approach
+        let task = Task()
+        
+        // Add relevant fields to the object
+        task.requester = PFUser.current()! // Pointer column type that points to PFUser
+        task.task = taskName!
+        
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone.current
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        let dateString = formatter.string(from: doneByDate)
+        task.doneBy = dateString
+        
+        // Save object (following function will save the object in Parse asynchronously)
+        task.saveInBackground(block: completion)
+    }
 }
     
 

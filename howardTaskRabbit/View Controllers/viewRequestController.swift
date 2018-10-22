@@ -7,15 +7,65 @@
 //
 
 import UIKit
+import Parse
 
-class viewRequestController: UIViewController {
-
+class viewRequestController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    var tasks: [Task] = []
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tasks.count != nil {
+            return tasks.count
+        } else {
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskRequestedCell", for: indexPath) as! TaskRequestedCell
+        cell.task = tasks[indexPath.row]
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 300
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(viewRequestController.didPulltoRefresh(_:)), for: UIControl.Event.valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
+        loadQueries()
         // Do any additional setup after loading the view.
     }
     
+    func loadQueries() {
+        // construct PFQuery
+        let query = PFQuery(className: "Task")
+        query.order(byDescending: "DoneBy")
+        query.includeKey("requester")
+        query.includeKey("DoneBy")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (tasks: [PFObject]?, error: Error?) in
+            if let tasks = tasks {
+                self.tasks = tasks as! [Task]
+                //print(tasks.posts)
+                self.tableView.reloadData()
+                self.tableView.refreshControl?.endRefreshing()
+            } else {
+                print(error?.localizedDescription)
+            }
+            
+        }
+    }
+    
+    @objc func didPulltoRefresh(_ refreshControl: UIRefreshControl) {
+        loadQueries()
+    }
 
     /*
     // MARK: - Navigation

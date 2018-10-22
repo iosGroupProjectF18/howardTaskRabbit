@@ -55,6 +55,9 @@
                                 <rect key="frame" x="159" y="467" width="56" height="41"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Tde-PK-ouq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.77867296009999998" green="1" blue="0.82285031109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -207,19 +210,67 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2by-lo-Hn4">
+                                <rect key="frame" x="0.0" y="102" width="375" height="565"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskRequestedCell" rowHeight="81" id="zJc-51-os1" customClass="TaskRequestedCell" customModule="howardTaskRabbit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zJc-51-os1" id="Sps-Vy-PSz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flg-Ez-jPi">
+                                                    <rect key="frame" x="25" y="15" width="92.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done by: 10/10/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhe-J1-Tgc">
+                                                    <rect key="frame" x="25" y="42.5" width="117" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Vhe-J1-Tgc" firstAttribute="leading" secondItem="Flg-Ez-jPi" secondAttribute="leading" id="5yk-KO-NJW"/>
+                                                <constraint firstItem="Flg-Ez-jPi" firstAttribute="leading" secondItem="Sps-Vy-PSz" secondAttribute="leading" constant="25" id="DnM-u8-q2Z"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Flg-Ez-jPi" secondAttribute="trailing" constant="25" id="LTf-cb-iMT"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vhe-J1-Tgc" secondAttribute="bottom" constant="15" id="PoK-cZ-KJ6"/>
+                                                <constraint firstItem="Flg-Ez-jPi" firstAttribute="top" secondItem="Sps-Vy-PSz" secondAttribute="top" constant="15" id="Qhv-Fj-Ue1"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vhe-J1-Tgc" secondAttribute="trailing" constant="25" id="oi9-0e-5hw"/>
+                                                <constraint firstItem="Vhe-J1-Tgc" firstAttribute="top" secondItem="Flg-Ez-jPi" secondAttribute="bottom" constant="7" id="pXC-iy-465"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="doneByLabel" destination="Vhe-J1-Tgc" id="s3u-lw-NVt"/>
+                                            <outlet property="taskNameLabel" destination="Flg-Ez-jPi" id="cyi-Ck-vjs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.77867296009999998" green="1" blue="0.82285031109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TkI-w9-rbL" firstAttribute="trailing" secondItem="BCU-by-LSj" secondAttribute="trailing" constant="95" id="GCG-QD-ar2"/>
+                            <constraint firstItem="2by-lo-Hn4" firstAttribute="leading" secondItem="TkI-w9-rbL" secondAttribute="leading" id="GrV-5C-aCQ"/>
+                            <constraint firstItem="2by-lo-Hn4" firstAttribute="top" secondItem="BCU-by-LSj" secondAttribute="bottom" constant="29" id="h1E-B0-q5V"/>
+                            <constraint firstItem="2by-lo-Hn4" firstAttribute="bottom" secondItem="TkI-w9-rbL" secondAttribute="bottom" id="hMW-Dk-jcJ"/>
                             <constraint firstItem="BCU-by-LSj" firstAttribute="leading" secondItem="TkI-w9-rbL" secondAttribute="leading" constant="94" id="kgz-jt-Iln"/>
+                            <constraint firstItem="2by-lo-Hn4" firstAttribute="trailing" secondItem="TkI-w9-rbL" secondAttribute="trailing" id="mV5-5c-jap"/>
                             <constraint firstItem="BCU-by-LSj" firstAttribute="top" secondItem="TkI-w9-rbL" secondAttribute="top" constant="10" id="qOe-op-LEO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TkI-w9-rbL"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="2by-lo-Hn4" id="rIa-oZ-XVi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXp-7i-KMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2495" y="4"/>
+            <point key="canvasLocation" x="2493.5999999999999" y="3.1484257871064472"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="uN4-uA-Ewj">
