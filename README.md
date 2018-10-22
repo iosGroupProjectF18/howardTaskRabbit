@@ -22,6 +22,15 @@ The following **stretch** features are implemented:
 
 - [ ] User can rate each other after a task is completed 
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://media.giphy.com/media/1dOHjhZr71velUIuKI/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+
 ## Problem Statement
 Currently there is no such application which allows Howard students to have others do some of their work (for instance: laundry, getting their grocery etc). So we realized that we could make an ios app where students can collaborate with each other and have their tasks done in exchange of money. 
 
