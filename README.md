@@ -29,6 +29,10 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://media.giphy.com/media/1dOHjhZr71velUIuKI/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+Here is a walkthrough for Email validation
+
+<img src='https://i.imgur.com/IpVccpF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 
