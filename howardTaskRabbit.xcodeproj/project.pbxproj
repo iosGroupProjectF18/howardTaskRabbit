@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		35D3B18EEFD5E365013C4BF7 /* Pods_howardTaskRabbit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724181FCFF91EC4009102003 /* Pods_howardTaskRabbit.framework */; };
 		4635A7BFA1C6A4D1AD85CF14 /* Pods_howardTaskRabbitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788B1146F369708EEDD26E4A /* Pods_howardTaskRabbitUITests.framework */; };
+		5005E907218F972A0019D7EA /* detailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5005E906218F972A0019D7EA /* detailTaskViewController.swift */; };
 		5027DA6E216195A800B3C65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DA6D216195A800B3C65F /* AppDelegate.swift */; };
 		5027DA73216195A800B3C65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5027DA71216195A800B3C65F /* Main.storyboard */; };
 		5027DA75216195AA00B3C65F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5027DA74216195AA00B3C65F /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5005E906218F972A0019D7EA /* detailTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailTaskViewController.swift; sourceTree = "<group>"; };
 		5027DA6A216195A800B3C65F /* howardTaskRabbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howardTaskRabbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5027DA6D216195A800B3C65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5027DA72216195A800B3C65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				50AF0FAD217B86B00072E46F /* viewRequestController.swift */,
 				F644373D217BCC0000E17936 /* LoginViewController.swift */,
 				F644373F217BDA9F00E17936 /* ProfileViewController.swift */,
+				5005E906218F972A0019D7EA /* detailTaskViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5005E907218F972A0019D7EA /* detailTaskViewController.swift in Sources */,
 				F6443740217BDA9F00E17936 /* ProfileViewController.swift in Sources */,
 				5027DA6E216195A800B3C65F /* AppDelegate.swift in Sources */,
 				50AF0FAC217B80EB0072E46F /* Task.swift in Sources */,

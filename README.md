@@ -14,14 +14,19 @@ The following **required** functionality is completed:
 - [x] Only Howard students can sign up
 - [X] User can complete their profile stating their dorm
 - [x] User can request that a task be completed by X date and X time
-- [ ] User can accept the repsonsibility to complete a task by X date and X time
+- [x] User can accept the repsonsibility to complete a task by X date and X time
 - [x] User can view a list of requested tasks
-- [ ] User can message the person who requested/accepted the task for more information and status updates 
-- [ ] User can mark a task as completed
+
 
 The following **stretch** features are implemented:
 
+- [ ] User can message the person who requested/accepted the task for more information and status updates 
+- [ ] User can mark a task as completed
 - [ ] User can rate each other after a task is completed 
+- [ ] User is persisted until logged out
+- [ ] If User has completed their User Profile, skip to the view tasks request tasks screen
+- [ ] Error messages for login/sign up screen
+
 
 ## Video Walkthrough
 
@@ -31,7 +36,7 @@ Here's a walkthrough of implemented user stories:
 
 Here is a walkthrough for Email validation
 
-<img src='https://i.imgur.com/IpVccpF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/bpAmDU6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
