@@ -11,6 +11,7 @@
 The following **required** functionality is completed:
 
 - [x] User can sign up to create a new account using Parse authentication
+- [x] Only Howard students can sign up
 - [X] User can complete their profile stating their dorm
 - [x] User can request that a task be completed by X date and X time
 - [ ] User can accept the repsonsibility to complete a task by X date and X time
