@@ -28,6 +28,7 @@ class Task: PFObject, PFSubclassing {
     @NSManaged var requester: PFUser
     @NSManaged var doneBy: String
     @NSManaged var rabbit: String
+    @NSManaged var done: Bool
     
     class func postTask(taskName: String?, doneByDate: Date, withCompletion completion: PFBooleanResultBlock?) {
         // use subclass approach
@@ -43,6 +44,7 @@ class Task: PFObject, PFSubclassing {
         let dateString = formatter.string(from: doneByDate)
         task.doneBy = dateString
         task.rabbit = ""
+        task.done = false
         // Save object (following function will save the object in Parse asynchronously)
         task.saveInBackground(block: completion)
     }

@@ -1,19 +1,19 @@
 //
-//  viewRequestController.swift
+//  MyRequestedTasksViewController.swift
 //  howardTaskRabbit
 //
-//  Created by Whitney Griffith on 10/20/18.
+//  Created by user144652 on 11/4/18.
 //  Copyright © 2018 Whitney Griffith. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-class viewRequestController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MyRequestedTasksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     
     @IBOutlet weak var tableView: UITableView!
     var tasks: [Task] = []
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tasks.count != nil {
             return tasks.count
@@ -30,6 +30,8 @@ class viewRequestController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
@@ -39,16 +41,16 @@ class viewRequestController: UIViewController, UITableViewDataSource, UITableVie
         refreshControl.addTarget(self, action: #selector(viewRequestController.didPulltoRefresh(_:)), for: UIControl.Event.valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
         loadQueries()
-        // Do any additional setup after loading the view.
     }
     
     func loadQueries() {
         // construct PFQuery
         let query = PFQuery(className: "Task")
+        query.whereKey("requester", equalTo: PFUser.current())
         query.order(byDescending: "DoneBy")
         query.includeKey("requester")
         query.includeKey("DoneBy")
-        query.limit = 20
+        //query.limit = 20
         
         query.findObjectsInBackground { (tasks: [PFObject]?, error: Error?) in
             if let tasks = tasks {
@@ -66,10 +68,7 @@ class viewRequestController: UIViewController, UITableViewDataSource, UITableVie
     @objc func didPulltoRefresh(_ refreshControl: UIRefreshControl) {
         loadQueries()
     }
-    
-    @IBAction func cancelToviewRequestController(_ segue: UIStoryboardSegue) {
-    }
-    
+
     /*
     // MARK: - Navigation
 

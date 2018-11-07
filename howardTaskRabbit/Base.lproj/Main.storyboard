@@ -318,6 +318,13 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="esC-vL-CUC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNF-8j-3rc">
+                                <rect key="frame" x="287" y="10" width="64" height="30"/>
+                                <state key="normal" title="My Tasks"/>
+                                <connections>
+                                    <segue destination="0zR-A6-j4A" kind="show" id="nSn-oe-Xgo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.77867296009999998" green="1" blue="0.82285031109999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -325,10 +332,12 @@
                             <constraint firstItem="2by-lo-Hn4" firstAttribute="leading" secondItem="TkI-w9-rbL" secondAttribute="leading" id="GrV-5C-aCQ"/>
                             <constraint firstItem="Cm9-jc-uUQ" firstAttribute="leading" secondItem="TkI-w9-rbL" secondAttribute="leading" constant="24" id="XPP-yP-Vi8"/>
                             <constraint firstItem="Cm9-jc-uUQ" firstAttribute="top" secondItem="Ciu-CE-ZeP" secondAttribute="top" constant="10" id="aoL-RD-OIN"/>
+                            <constraint firstItem="RNF-8j-3rc" firstAttribute="top" secondItem="Cm9-jc-uUQ" secondAttribute="top" id="gf4-3Q-Ceu"/>
                             <constraint firstItem="2by-lo-Hn4" firstAttribute="top" secondItem="BCU-by-LSj" secondAttribute="bottom" constant="29" id="h1E-B0-q5V"/>
                             <constraint firstItem="2by-lo-Hn4" firstAttribute="bottom" secondItem="TkI-w9-rbL" secondAttribute="bottom" id="hMW-Dk-jcJ"/>
                             <constraint firstItem="BCU-by-LSj" firstAttribute="leading" secondItem="TkI-w9-rbL" secondAttribute="leading" constant="94" id="kgz-jt-Iln"/>
                             <constraint firstItem="2by-lo-Hn4" firstAttribute="trailing" secondItem="TkI-w9-rbL" secondAttribute="trailing" id="mV5-5c-jap"/>
+                            <constraint firstItem="TkI-w9-rbL" firstAttribute="trailing" secondItem="RNF-8j-3rc" secondAttribute="trailing" constant="24" id="ony-a6-BfK"/>
                             <constraint firstItem="BCU-by-LSj" firstAttribute="top" secondItem="TkI-w9-rbL" secondAttribute="top" constant="10" id="qOe-op-LEO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TkI-w9-rbL"/>
@@ -340,6 +349,104 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXp-7i-KMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2493.5999999999999" y="3.1484257871064472"/>
+        </scene>
+        <!--My Requested Tasks-->
+        <scene sceneID="aag-Nb-mLk">
+            <objects>
+                <viewController id="v7U-S2-sMQ" customClass="MyRequestedTasksViewController" customModule="howardTaskRabbit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vb9-Cs-94M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4ar-FT-3lv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTaskRequestedCell" rowHeight="132" id="A0g-zb-5Ov" customClass="MyTaskRequestedCell" customModule="howardTaskRabbit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="132"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A0g-zb-5Ov" id="45b-7Z-Lug">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="131.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r39-3F-SaA">
+                                                    <rect key="frame" x="25" y="15" width="92.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done by: 10/10/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzK-2e-kNN">
+                                                    <rect key="frame" x="25" y="42.5" width="117" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assigned Rabbit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kge-xr-ezH">
+                                                    <rect key="frame" x="25" y="64.5" width="96" height="15"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcb-1w-59p">
+                                                    <rect key="frame" x="25" y="90" width="155" height="24"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" title="Mark as completed" image="check-mark">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didMarkAsCompleted:" destination="A0g-zb-5Ov" eventType="touchUpInside" id="96e-8w-DDc"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jzK-2e-kNN" firstAttribute="top" secondItem="r39-3F-SaA" secondAttribute="bottom" constant="7" id="658-GG-u3O"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jzK-2e-kNN" secondAttribute="trailing" constant="25" id="8zT-at-CiY"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r39-3F-SaA" secondAttribute="trailing" constant="25" id="Fgw-2R-XbA"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jzK-2e-kNN" secondAttribute="bottom" constant="15" id="KML-xT-uqm"/>
+                                                <constraint firstItem="Vcb-1w-59p" firstAttribute="leading" secondItem="Kge-xr-ezH" secondAttribute="leading" id="O1w-IO-TcM"/>
+                                                <constraint firstItem="Kge-xr-ezH" firstAttribute="top" secondItem="jzK-2e-kNN" secondAttribute="bottom" constant="7" id="Re1-OE-5E3"/>
+                                                <constraint firstItem="r39-3F-SaA" firstAttribute="top" secondItem="45b-7Z-Lug" secondAttribute="top" constant="15" id="Ub3-7x-gUD"/>
+                                                <constraint firstItem="jzK-2e-kNN" firstAttribute="leading" secondItem="r39-3F-SaA" secondAttribute="leading" id="YK4-hL-7dY"/>
+                                                <constraint firstItem="r39-3F-SaA" firstAttribute="leading" secondItem="45b-7Z-Lug" secondAttribute="leading" constant="25" id="a6L-sb-AEm"/>
+                                                <constraint firstItem="Kge-xr-ezH" firstAttribute="leading" secondItem="jzK-2e-kNN" secondAttribute="leading" id="tcS-Nk-KnC"/>
+                                                <constraint firstItem="Vcb-1w-59p" firstAttribute="top" secondItem="Kge-xr-ezH" secondAttribute="bottom" constant="10" id="uBZ-n0-nBo"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vcb-1w-59p" secondAttribute="bottom" constant="15" id="y8z-Uo-VLe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="assignedRabbit" destination="Kge-xr-ezH" id="d7Y-33-BWz"/>
+                                            <outlet property="doneByLabel" destination="jzK-2e-kNN" id="09G-eH-OsM"/>
+                                            <outlet property="taskNameLabel" destination="r39-3F-SaA" id="aOF-Kg-wZm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4ar-FT-3lv" firstAttribute="leading" secondItem="UIY-B3-IgI" secondAttribute="leading" id="DJa-xy-hXi"/>
+                            <constraint firstItem="4ar-FT-3lv" firstAttribute="bottom" secondItem="UIY-B3-IgI" secondAttribute="bottom" id="Env-16-Atm"/>
+                            <constraint firstItem="4ar-FT-3lv" firstAttribute="top" secondItem="vb9-Cs-94M" secondAttribute="top" id="WLA-am-6P3"/>
+                            <constraint firstItem="4ar-FT-3lv" firstAttribute="trailing" secondItem="UIY-B3-IgI" secondAttribute="trailing" id="eSq-Zb-sh4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UIY-B3-IgI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Requested Tasks" id="Gf0-XS-WKh">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="cMk-rO-f56">
+                            <connections>
+                                <segue destination="7x6-yr-dcx" kind="unwind" unwindAction="cancelToviewRequestController:" id="D0T-OK-YDN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="4ar-FT-3lv" id="27I-gN-2U0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvS-y8-Wsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7x6-yr-dcx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3412" y="769.56521739130437"/>
         </scene>
         <!--Detail Task View Controller-->
         <scene sceneID="eet-ml-hns">
@@ -402,7 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dT-gW-N5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3145" y="-67"/>
+            <point key="canvasLocation" x="3321" y="3"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="uN4-uA-Ewj">
@@ -485,9 +592,30 @@
             </objects>
             <point key="canvasLocation" x="-652" y="27"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gy9-A4-bVl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0zR-A6-j4A" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EK4-WG-Dco">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v7U-S2-sMQ" kind="relationship" relationship="rootViewController" id="hAX-E3-sV9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swd-4H-O3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2472.8000000000002" y="769.56521739130437"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="check-mark" width="24" height="24"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CPM-YH-6Gt"/>
+        <segue reference="MC3-qS-yFC"/>
         <segue reference="esC-vL-CUC"/>
     </inferredMetricsTieBreakers>
 </document>
