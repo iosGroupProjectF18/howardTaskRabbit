@@ -16,12 +16,12 @@ The following **required** functionality is completed:
 - [x] User can request that a task be completed by X date and X time
 - [x] User can accept the repsonsibility to complete a task by X date and X time
 - [x] User can view a list of requested tasks
+- [X] User can mark a task as completed
 
 
 The following **stretch** features are implemented:
 
 - [ ] User can message the person who requested/accepted the task for more information and status updates 
-- [ ] User can mark a task as completed
 - [ ] User can rate each other after a task is completed 
 - [ ] User is persisted until logged out
 - [ ] If User has completed their User Profile, skip to the view tasks request tasks screen
@@ -43,6 +43,10 @@ Here is a walkthrough for Accepting a task
 <img src='https://imgur.com/bpAmDU6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+Here is a walkthrough for viewing a list of opened tasks and marking a task as completed
+
+<img src='https://media.giphy.com/media/5UDr3f8XlWe7BKF1ie/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## Problem Statement
