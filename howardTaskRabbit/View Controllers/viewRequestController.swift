@@ -32,11 +32,11 @@ class viewRequestController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 300
         
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(viewRequestController.didPulltoRefresh(_:)), for: UIControl.Event.valueChanged)
+        refreshControl.addTarget(self, action: #selector(viewRequestController.didPulltoRefresh(_:)), for: UIControlEvents.valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
         loadQueries()
         // Do any additional setup after loading the view.

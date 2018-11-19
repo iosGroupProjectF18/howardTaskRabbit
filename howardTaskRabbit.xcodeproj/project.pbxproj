@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35D3B18EEFD5E365013C4BF7 /* Pods_howardTaskRabbit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724181FCFF91EC4009102003 /* Pods_howardTaskRabbit.framework */; };
+		3F894D6321A218EF00049FEC /* MenuItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F894D6221A218EF00049FEC /* MenuItemsViewController.swift */; };
 		4635A7BFA1C6A4D1AD85CF14 /* Pods_howardTaskRabbitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788B1146F369708EEDD26E4A /* Pods_howardTaskRabbitUITests.framework */; };
 		5005E907218F972A0019D7EA /* detailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5005E906218F972A0019D7EA /* detailTaskViewController.swift */; };
 		5027DA6E216195A800B3C65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027DA6D216195A800B3C65F /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F894D6221A218EF00049FEC /* MenuItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsViewController.swift; sourceTree = "<group>"; };
 		5005E906218F972A0019D7EA /* detailTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailTaskViewController.swift; sourceTree = "<group>"; };
 		5027DA6A216195A800B3C65F /* howardTaskRabbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howardTaskRabbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5027DA6D216195A800B3C65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				F644373D217BCC0000E17936 /* LoginViewController.swift */,
 				F644373F217BDA9F00E17936 /* ProfileViewController.swift */,
 				5005E906218F972A0019D7EA /* detailTaskViewController.swift */,
+				3F894D6221A218EF00049FEC /* MenuItemsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -352,15 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-howardTaskRabbit-checkManifestLockResult.txt",
 			);
@@ -374,16 +373,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-howardTaskRabbit/Pods-howardTaskRabbit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
@@ -398,15 +393,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-howardTaskRabbitUITests-checkManifestLockResult.txt",
 			);
@@ -420,15 +411,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-howardTaskRabbitTests-checkManifestLockResult.txt",
 			);
@@ -454,6 +441,7 @@
 				50AF0FA9217B7B910072E46F /* RequestTaskViewController.swift in Sources */,
 				F6443744217BDC4F00E17936 /* User.swift in Sources */,
 				8556444E218FAF5F00500A55 /* MyTaskRequestedCell.swift in Sources */,
+				3F894D6321A218EF00049FEC /* MenuItemsViewController.swift in Sources */,
 				852C55E8217D4A7C0059F06A /* TaskRequestedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,6 +621,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6922PB386G;
 				INFOPLIST_FILE = howardTaskRabbit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -652,6 +641,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6922PB386G;
 				INFOPLIST_FILE = howardTaskRabbit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

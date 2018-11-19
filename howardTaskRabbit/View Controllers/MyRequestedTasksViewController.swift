@@ -23,7 +23,7 @@ class MyRequestedTasksViewController: UIViewController, UITableViewDataSource, U
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskRequestedCell", for: indexPath) as! TaskRequestedCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyTaskRequestedCell", for: indexPath) as! MyTaskRequestedCell
         cell.task = tasks[indexPath.row]
         return cell
     }
@@ -34,11 +34,11 @@ class MyRequestedTasksViewController: UIViewController, UITableViewDataSource, U
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 300
         
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(viewRequestController.didPulltoRefresh(_:)), for: UIControl.Event.valueChanged)
+        refreshControl.addTarget(self, action: #selector(viewRequestController.didPulltoRefresh(_:)), for: UIControlEvents.valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
         loadQueries()
     }

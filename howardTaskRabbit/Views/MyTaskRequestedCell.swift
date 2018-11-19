@@ -24,8 +24,8 @@ class MyTaskRequestedCell: UITableViewCell {
     
     @IBAction func didMarkAsCompleted(_ sender: Any) {
         task.done = true
-        (sender as! AnyObject).setImage(UIImage(named: "check-mark-done"), for: UIControl.State.normal)
-        (sender as! AnyObject).setTitle("Completed", for: UIControl.State.normal)
+        (sender as! AnyObject).setImage(UIImage(named: "check-mark-done"), for: UIControlState.normal)
+        (sender as! AnyObject).setTitle("Completed", for: UIControlState.normal)
     }
     override func awakeFromNib() {
         super.awakeFromNib()
